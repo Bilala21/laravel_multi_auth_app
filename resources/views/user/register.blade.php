@@ -23,19 +23,19 @@
     </style>
 @endsection
 @section('content')
-    <div id="wrapper" class="pt-5">
-        <div class="container">
+    <div id="wrapper" class="pt-5 px-4">
+        <div class="container px-0">
             <div class="row">
-                <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12 mx-auto">
+                <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12 mx-auto form-wrapper bg-white rounded p-4 pt-3 position-relative form-wrapper">
                     @if (session("message"))
-                    <div class="bg-success w-100 text-center text-white pb-2 pt-1 success-message">
+                    <div class="bg-success w-100 text-center  pb-2 pt-1 success-message">
                         {{ Session('message') }}
                     </div>
                     <div class="text-end">
                         <a href="{{ route('user.login') }}" class="mt-3 btn btn-info d-block text-center">Sign In</a>
                     </div>
                 @endif
-                    <div class=" form-wrapper bg-white rounded p-4 pt-3 {{ Session('message') ? "d-none" :""}}">
+                    <div class=" ">
                         <strong class="mb-3 d-block fs-3">Sign Up</strong>
                         <form class="w-100 m-0" method="post" action="">
                             @csrf

@@ -25,8 +25,12 @@ Route::prefix("admin")->name("admin.")->group(function(){
     Route::middleware(["guest:admin"])->group(function(){
        Route::view("/login","admin.login")->name("/"); 
        Route::post("/login",[AdminAuthControlle::class,"logIn"])->name("login"); 
-    //    Route::view("/register","admin.register")->name("register");  I disabled this route for testing purpose you can enabled it
-    //    Route::post("/register",[AdminAuthControlle::class,"create"])->name("create");  I disabled this route for testing purpose you can enabled it
+       
+      //  I disabled this route for testing purpose you can enabled it
+      //  Route::view("/register","admin.register")->name("register"); 
+
+      //  I disabled this route for testing purpose you can enabled it
+      //  Route::post("/register",[AdminAuthControlle::class,"create"])->name("create"); 
     });
     Route::middleware(["auth:admin"])->group(function(){
        Route::view("/home","admin.dashboard.home")->name("home"); 

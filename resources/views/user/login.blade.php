@@ -1,9 +1,6 @@
 @extends('user.layout.master')
 @section('style')
     <style>
-        body {
-            background: #ededed;
-        }
 
         .navbar {
             position: relative;
@@ -23,8 +20,8 @@
     </style>
 @endsection
 @section('content')
-    <div id="wrapper" class="pt-5">
-        <div class="container">
+    <div id="wrapper" class="pt-5 px-4">
+        <div class="container px-0">
             <div class="row">
                 <div
                     class="col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12 mx-auto form-wrapper bg-white rounded p-4 pt-3 position-relative">

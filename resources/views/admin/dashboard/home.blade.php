@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="content">
-            <h1 class="text-center pb-5 pt-4">This system suport multi auth</h1>
+            <h1 class="text-center pb-5 pt-4">This system support multi auth</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti in harum, veritatis dolorem porro minus
                 expedita nesciunt suscipit consequuntur aspernatur architecto quaerat dolores repellat aut vitae minima,
