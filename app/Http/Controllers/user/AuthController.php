@@ -36,7 +36,7 @@ class AuthController extends Controller
             "email" => "required|email|exists:users",
             "password" => "required",
         ],[
-            "email"=>"Email is invalid"
+            "email.exists"=>"Email is invalid"
         ]);
         $user = Auth::attempt([
             "email" => $request->email,

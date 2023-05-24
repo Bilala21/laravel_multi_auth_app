@@ -35,7 +35,7 @@ class AuthController extends Controller
             "email" => "required|email|exists:admins",
             "password" => "required",
         ],[
-            "email"=>"Email invalid"
+            "email.exists"=>"Email invalid"
         ]);
         $admin = Auth::guard('admin')->attempt([
             "email" => $request->email,
